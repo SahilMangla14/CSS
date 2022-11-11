@@ -1,0 +1,201 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"]{
+    color: #1d3557;
+}
+
+button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+    /*
+        button:hover should be together
+        here signup do not show this property becuase id selector wins here
+        .post button:hover means button present in the post class
+    */
+}
+
+.post a:hover{
+    text-decoration: underline;
+    /*
+        .post a:hover means a that are present inside the class post
+    */
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(3n) {
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+    /* 
+    Here, If I onlu ise ::selection{ property } then it will do this for the whole web page
+     */
+}
+
+/* alternate way to do .post{
+    
+    }
+
+ section[class="post"]{
+    background-color: white;
+} 
+    alternate way
+    section.post {
+
+    }
+*/
+
+
+
+/* 
+    universal selector - selects every peice of text
+    eg->    *{
+                color: blue;
+    }
+
+
+    element selector - selects a particular elt
+    eg->        h1{
+                    color: cyan;
+    }
+
+    selector list - selects multiple elts
+    eg->        h1,h2{
+                        color: orange;
+    }
+
+    ID selector - select the element with id of 'logout'
+    syntax->    #id{
+                    color: cyan;
+    }
+
+    Class selector - used to sytle a particular class of elements
+    syntax->    .class name {
+                        color: blue;
+    }
+
+    Descendant-selector - In the below example, it will select all <a> that are nested inside an <li>. Here no li will be styled.
+    syntax->    li a {
+                    color: teal;
+    }
+
+    Adjacent Selector - In the below example, select only that paragraphs that are immediately prededed by an <h1>
+    synatx->    h1+p {
+                    color: red;
+    }
+
+    Here, + sign is called adjacent combinator
+
+    Direct child - In the below example, select only the <li>'s that are direct children of a <div> element
+    syntax->    div > li {
+                    color: white;
+    }
+    
+    Attribute selector - Int the below example, select all input elements where the text attribute is set to "text"
+    eg->    input[type="text"] {
+                        width: 300px;
+                        color: yellow;
+    }
+    for multiple attributes
+            input[type="text"][name="M] {
+
+            }
+
+    pseudoclasses - classes with special properties
+                    always start with colon
+    
+                eg  hover- used to change the style of the element when we bring our cursor to it
+                    active- used to change the style of the element when we click on it
+                    checked- used to style when we check a checkbox or a radio button
+                    nth-of-type() - used to style nth of the type
+                    there are many more
+                    like nth-child(), not(), first, first-child etc.
+
+
+    pseudoelements - keyword added to a selector that lets you style a particular part of selected element
+                eg  ::after
+                    ::before
+                    ::first-letter
+                    ::first-line
+                    ::selection
+
+    CSS cascade - if the selector is same or selector's number comes out to be same then, which is written later will be executed
+
+    Specificity -   inline > id > class > element
+                    formula-> id class element
+                    The one with the greater number will dominate
+
+    use of chrome dev tools when stuck 
+
+    inline css has greater specificity than external css but it is not recommended
+    
+    !important has the highest specificity even greater than inline but not recommended
+    eg->    h1{
+                color: red !important;
+    }
+
+*/

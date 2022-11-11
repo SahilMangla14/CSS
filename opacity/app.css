@@ -1,0 +1,33 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255,0.7);
+    color: rgba(25,55,225,0.7);
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.7;
+    /* color: rgba(25,55,225,0.7); */
+}
+
+/* 
+    basically opacity and rgba both do the same thing with minor difference
+    THe difference is
+    opacity applies to everything, i.e. if we apply opacity on a container, it applies to everything within container
+    but
+    rgba applies to single property say, background-color i.e. making background-color: opaque;
+    both opacity and rgba ranges from 0 to 1;
+
+    If we use hexadecimal colors then,
+    opacity varies from 00 to ff
+    i.e. hexacode00 - hexacodeff
+*/

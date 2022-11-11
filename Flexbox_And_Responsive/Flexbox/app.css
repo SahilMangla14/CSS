@@ -1,0 +1,83 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    /* 
+        at present the div won't have 200px height becuase of flex property
+        but if I change this height to 800px then div would have 200px height
+        abd if I change height to 1200px then div would have 200height with some available space
+    */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    /* max-width: 300px; */
+    text-align:center;
+    flex-basis: 600px;
+}
+
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink:2;
+}
+div:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+main .sidebar {
+    background-color: #6930c3;
+    flex:1 2 300px;
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+    /* justify-content: ; */
+}
+
+/* 
+    What is flexbox?
+    1) Flexbox is a one-dimensional layout method for laying out items in rows or columns
+    2) Flexbox is a recent addition to CSS. included to address common layout frustations.
+    3) Flexbox allows us to distribute space dynamically across elements of an unknown size, hence the term "flex".
+    
+    display: flex;
+    a method for space distribution between elements
+    two axes
+    main axis and cross axis
+    properties
+    1) flex-direction: row; by default
+            flex-direction: column; reverses the column axis
+            flex-direction: row-reverse; reverses the main axis
+            flex-direction: column-reverse; reverses the cross axis
+    
+    2) justify-content: center
+                        space-around
+                        space-between
+                        evenly-distributed
+                        flex-end
+                        flex-start
+
+*/
+
+

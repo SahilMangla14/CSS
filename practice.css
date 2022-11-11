@@ -1,0 +1,31 @@
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    /* 
+        at present the div won't have 200px height becuase of flex property
+        but if I change this height to 800px then div would have 200px height
+        abd if I change height to 1200px then div would have 200height with some available space
+    */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;  /*this is default*/
+    /* flex-direction: row-reverse;  starts from right to left*/
+    /* flex-direction: column; */
+    /* similarly we have column-reverse */
+    justify-content: space-evenly;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}

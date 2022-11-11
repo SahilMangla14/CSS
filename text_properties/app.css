@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: #ff98ff underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: Segoe UI, Futura, Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+    color:chocolate;
+}
+
+h2 {
+    color:brown;
+}
+
+h3 {
+    color:blueviolet;
+}
+
+h4 {
+    color:aquamarine;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color:darkgrey;
+}
+
+/* 
+    text-align ->       sets the alignment of the text
+                        for eg-> center places it at the centre of the box or the space it takes
+                        right places it at the right of the box. It is not necessary that right is right of the screen
+    
+    width ->    width sets the width of the box. for eg. width = 50% means box is of 50% of screen size
+    
+    font-weight->   It sets the boldness of the text
+                    400 is normal and 700 is bold. There are many fonts that do not have all the font weight. Basically font weight depends on font as well
+    
+    text decoration->   underlines the text
+                        underline can be of different types-> upperline, line-through etc
+                        we can also set color using hex code or any other representation
+                        we can also decor the line by using wavy or dotted etc.
+                        if you want to remove underlines from the links . U can set it to none
+
+    line-height- for eg-> line-height=2.5 makes it 2.5 times the normal size
+
+    letter-spacing- Sets the spacing between letters 
+
+    pixels - px -   by far the most commonly used absolute unit
+                    1px does not necessarily equal the width of exactly one pixel!
+                    Not recommended for responsive websites.
+
+    font-size ->    sets the size of font
+    
+    font-family->   sets the font of the text. But all fonts may not be available on different machines
+                    font stack is bascially the list of fonts the you would like to use in order. It is bascially the backup if font is not available
+                    if we use only stack, the computer will choose any one font from that family
+                    eg- font-family: fantasy;
+    
+
+*/

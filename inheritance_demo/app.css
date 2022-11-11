@@ -1,0 +1,22 @@
+body {
+    color: purple;
+    /* although body has nothing directly written in it but all the elts that are present in body will inherit it */
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+button, input {
+    color: inherit;  
+    /* there are certain properties that do not inherit, if we want to make them inherit
+    use the above method
+     */
+     /* 
+        here button inherited from form not from body because it is much closer to it
+     */
+}

@@ -1,0 +1,26 @@
+h3 {
+    color:brown;
+    background-color: beige;
+}
+
+p {
+    color: green;
+    background: yellow;    /* technically we should use background color as background do much more than just coloring it*/   
+}
+
+body {
+    background-color: #665544; /*#000000 is same as #000*/
+    /* max no in hexadecimal is #FFFFFF
+    # is just to represent hexadecimal
+    whenever we have two letters same and this is same for complete hexadecimal no then we can merge it like thiw
+    eg #FFFFFF is same as #FFF and %664539 is not same as #64539
+    but  #665544 is same as #654*/
+}
+
+button {
+    background-color: rgb(15,15,15);
+    /* first place represents r with the max value of 255 
+        second place represents g with the max value of 255
+        third place represents b with the max value of 255
+     */
+}
